@@ -423,12 +423,9 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .card:hover {
-    background-color: #eee;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-    z-index: 1;
-    border-radius: 10px;
-    padding-top: 8px; }
+    border-radius: 10px; }
   .card__image {
     background-size: cover;
     width: 166px;
@@ -848,6 +845,8 @@ body {
     margin-bottom: 168px; }
 
 .testimonials-card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   width: 314px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -871,7 +870,11 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 150%;
-  z-index: -1; }
+  z-index: 1; }
+  .testimonials-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    border-radius: 10px; }
   .testimonials-card__photo {
     width: 140px;
     height: 140px;
